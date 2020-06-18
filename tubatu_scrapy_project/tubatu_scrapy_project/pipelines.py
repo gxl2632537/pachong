@@ -7,6 +7,9 @@
 # 定义Item Pipeline的实现，实现数据的清洗，储存，验证。
 # 这里我导入是myql 我不用mogodb
 import pymysql
+import scrapy
+from scrapy.exceptions import DropItem
+from scrapy.pipelines.images import ImagesPipeline
 # 实现将数据保存到mysql中去
 class TubatuScrapyProjectPipeline:
     # 初始化
@@ -32,3 +35,42 @@ class TubatuScrapyProjectPipeline:
         # 关闭游标和连接
         self.cursor.close()
         self.connect.close()
+#自定义的图片下载类需要继承于ImagesPipeline
+class TubatuImagePipeline(ImagesPipeline):
+    # def get_media_requests(self, item, info):
+    #     #根据image_urls中指定的URL进行爬取
+    #     pass
+
+    # 请求下载
+    def get_media_requests(self, item, info):
+        # 根据image_urls中指定的url进行爬取
+        for img_url in item['image_urls']:
+            # 下载完后给别的函数去改名字，所以用meta传下去
+            yield scrapy.Request(img_url, meta={'item': item})
+
+    # 该方法默认即可，一般不做修改（用于下载图片）
+    def item_completed(self, results, item, info):
+        #图片下载完毕之后，处理结果的,返回是一个二元组
+        #(success,image_info_or_failure)
+        # 图片下载完成之后，处理结果的方法，返回的是一个二元组
+        # 返回的格式：(success, image_info_or_failure)  第一个元素表示图片是否下载成功；第二个元素是一个字典，包含了image的信息
+        image_paths = [x['path'] for ok,x in results if ok] # 通过列表生成式
+        if not image_paths:
+            raise DropItem('Item contains no images') # 抛出异常，图片下载失败（注意要导入DropItem模块）
+        return item
+
+    # 用于给下载的图片设置文件名称和路径
+    def file_path(self, request, response=None, info=None):
+        # #用于给下载的图片设置文件名称的
+        # url = request.url
+        # file_name = url.split('/')[-1]
+        # #aaaa.jpg
+        # return file_name
+        item = request.meta['item']  # 从上面的get_media_requests()方法中获取到item
+        folder = item['content_name']  # 获取爬取到的数据的content_name
+        folder_strip = folder.strip()  # 去除空格
+        image_guid = request.url.split('/')[-1]  # request.url 获取到如下的图片地址
+        # 如："https://pic.to8to.com/case/2018/08/27/20180827165930-fac62168_284.jpg"
+        # 拆分后为：20180827165930-fac62168_284.jpg
+        filename = u'images/{}/{}'.format(folder_strip, image_guid)
+        return filename

@@ -51,7 +51,7 @@ class TubatuSpider(scrapy.Spider):
             # print(info['content_ajax_url'])
             # mete=info 是把回调中需要的数据传进去，meta必须是一个字典，在下一个函数中可以使用response.meta防问
             yield scrapy.Request(url=info['content_ajax_url'],callback=self.handle_pic_parse,meta=info)   # 使用yield来发送异步请求  # 使用scrapy.Request()来发送请求，传递两个参数，其中callback(回调函数)，只写方法的名称即可
-            break
+
             # 页码逻辑 获取网页的页码，判断是否存在下一页
             # if response.xpath("//a[@id='nextpageid']"):
             #     # 用xpath语法获取当前页面，并使用extract_first()获取，再用int()进行转型。并将当前页码数+1得到下一页的url地址
@@ -70,9 +70,11 @@ class TubatuSpider(scrapy.Spider):
                      # 昵称
                     tubatu_info['nick_name'] = item['l']['n'] # 上传图片人的昵称
                     # 图片的地址
-                    tubatu_info['pic_url'] = 'https://pic1.to8to.com/case/'+item['l']['s']  # 图片的url地址
+                    # tubatu_info['pic_url'] = 'https://pic1.to8to.com/case/'+item['l']['s']  # 图片的url地址
+
+
                     # 必须要使用这个字段，后面的数据要改成列表格式 在items中定义image_urls这个字段名称  这是将图片下载下来使用的
-                    # tubatu_info['image_urls'] = ['https://pic1.to8to.com/case/' + item['l']['s']]   #在items中定义image_urls这个字段名称  这是将图片下载下来使用的
+                    tubatu_info['image_urls'] = ['https://pic1.to8to.com/case/' + item['l']['s']]   #在items中定义image_urls这个字段名称  这是将图片下载下来使用的 下载图片则把原来的注释掉，把数据库暂时关闭
                     # 图片的名称
                     tubatu_info['pic_name'] = item['l']['t']  # 图片名称
                     tubatu_info['content_name'] = response.request.meta['content_name']

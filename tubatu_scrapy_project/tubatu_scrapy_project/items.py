@@ -20,8 +20,8 @@ class TubatuScrapyProjectItem(scrapy.Item):
     #昵称
     nick_name = scrapy.Field()
     #图片的Url
-    pic_url = scrapy.Field()
-    #是必须的，必须要定义为image_urls 这是下载的图片是属性 这是固定的值不是自定义的
-    # image_urls = scrapy.Field()
+    # pic_url = scrapy.Field()
+    #是必须的，必须要定义为image_urls 这是下载的图片是属性 这是固定的值不是自定义的 如果需要下载图片则需要把原来 的图片url注释掉
+    image_urls = scrapy.Field()
     #图片的名称
     pic_name = scrapy.Field()

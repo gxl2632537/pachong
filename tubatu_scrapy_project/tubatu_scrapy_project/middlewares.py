@@ -131,3 +131,16 @@ class my_useragent(object):
         agent = random.choice(user_agent_list)
         #request.headers，设置了请求头
         request.headers['User-Agent'] = agent
+
+# 定义代理
+class my_proxy(object):
+    def process_request(self,request,spider):
+        # proxy,主机头和端口号
+        request.meta['proxy'] = 'u5056.b5.t.16yun.cn:6460'
+        # 用户名:密码
+        proxy_name_pass = '16FOBFVZ:245924'.encode('utf-8')
+        # base64加密
+        encode_pass_name = base64.b64encode(proxy_name_pass)
+        # 将代理信息设置到头部去
+        # 注意！！！！！Basic后面有一个空格
+        request.headers['Proxy-Authorization'] = 'Basic ' + encode_pass_name.decode()

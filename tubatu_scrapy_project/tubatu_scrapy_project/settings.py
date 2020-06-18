@@ -57,6 +57,7 @@ ROBOTSTXT_OBEY = False
 DOWNLOADER_MIDDLEWARES = {
    # 'tubatu_scrapy_project.middlewares.TubatuScrapyProjectDownloaderMiddleware': 543,
    'tubatu_scrapy_project.middlewares.my_useragent': 300,
+   'tubatu_scrapy_project.middlewares.my_proxy': 301,
 }
 
 # Enable or disable extensions
@@ -70,8 +71,11 @@ DOWNLOADER_MIDDLEWARES = {
 
 # 如果你要使用pipeline，你就要在setting里面启用，否则是不可用的 这里导入的是pipelines.py下的TubatuScrapyProjectPipeline方法 这里一般是存储
 ITEM_PIPELINES = {
-   'tubatu_scrapy_project.pipelines.TubatuScrapyProjectPipeline': 300,
+   # 'tubatu_scrapy_project.pipelines.TubatuScrapyProjectPipeline': 200,
+   'tubatu_scrapy_project.pipelines.TubatuImagePipeline': 201,
 }
+#定义图片被下载到哪里
+IMAGES_STORE = 'images'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
