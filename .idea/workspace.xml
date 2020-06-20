@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0102296-4e67-4083-8ef4-eaade6604e44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders/tubatu.py" beforeDir="false" afterPath="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders/tubatu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guazi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guazi/guazi/guazi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guazi/guazi/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guazicity.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handle_guazi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_guazi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,31 +20,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/scrapy.cfg">
+        <entry file="file://$PROJECT_DIR$/guazi/guazi/guazi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="304">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders/tubatu.py">
+        <entry file="file://$PROJECT_DIR$/guazi/guazi/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="76" column="162" selection-start-line="76" selection-start-column="162" selection-end-line="76" selection-end-column="162" />
+            <state relative-caret-position="418">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guazi/guazi/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-969">
+              <caret line="94" column="59" lean-forward="true" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
               <folding>
-                <element signature="e#102#115#0" expanded="true" />
+                <element signature="e#170#196#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="73" column="65" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -49,34 +52,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="437">
               <caret line="23" column="75" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/middlewares.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/guazi/guazi/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="105" column="18" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="18" />
-              <folding>
-                <element signature="e#233#259#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="19">
+              <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="304">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="31" />
               <folding>
                 <element signature="e#253#267#0" expanded="true" />
               </folding>
@@ -85,15 +80,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/guazi/guazi/spiders/guazispider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="120" column="67" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/main.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql_guazi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="156">
+              <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysql_3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guazi/guazi/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -103,6 +123,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -112,6 +133,8 @@
       <find>Enable or disable downloader middlewares</find>
       <find>process_request</find>
       <find>TubatuScrapyProjectPipeline</find>
+      <find>HTTPCACHE_ENABLED</find>
+      <find>handle_car_info</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,14 +171,25 @@
         <option value="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/items.py" />
         <option value="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders/tubatu.py" />
         <option value="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/pipelines.py" />
+        <option value="$PROJECT_DIR$/guazi.js" />
+        <option value="$PROJECT_DIR$/guazicity.txt" />
+        <option value="$PROJECT_DIR$/handle_guazi.py" />
+        <option value="$PROJECT_DIR$/guazi/guazi/items.py" />
+        <option value="$PROJECT_DIR$/guazi/guazi/main.py" />
+        <option value="$PROJECT_DIR$/guazi/guazi/settings.py" />
+        <option value="$PROJECT_DIR$/guazi/guazi/mysql_guazi.py" />
+        <option value="$PROJECT_DIR$/guazi/guazi/middlewares.py" />
+        <option value="$PROJECT_DIR$/mysql_3.py" />
+        <option value="$PROJECT_DIR$/guazi/guazi/pipelines.py" />
+        <option value="$PROJECT_DIR$/guazi/guazi/spiders/guazispider.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="236" />
-    <option name="y" value="83" />
-    <option name="width" value="1053" />
-    <option name="height" value="902" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="44" />
+    <option name="y" value="15" />
+    <option name="width" value="1730" />
+    <option name="height" value="1079" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -169,6 +203,24 @@
             <path>
               <item name="pachong" type="b2602c69:ProjectViewProjectNode" />
               <item name="pachong" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pachong" type="462c0819:PsiDirectoryNode" />
+              <item name="guazi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pachong" type="462c0819:PsiDirectoryNode" />
+              <item name="guazi" type="462c0819:PsiDirectoryNode" />
+              <item name="guazi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pachong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pachong" type="462c0819:PsiDirectoryNode" />
+              <item name="guazi" type="462c0819:PsiDirectoryNode" />
+              <item name="guazi" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pachong" type="b2602c69:ProjectViewProjectNode" />
@@ -191,8 +243,17 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/guazi/guazi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\software\pachong" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\software\pachong\guazi\guazi" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -206,8 +267,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="handle_51job_one" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="guazispider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pachong" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/guazi/guazi/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/guazi/guazi/spiders/guazispider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="handle_guazi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pachong" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,7 +303,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/handle_51job_one.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/handle_guazi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pachong" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/guazi/guazi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/guazi/guazi/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -251,7 +356,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mysql_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mysql_3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pachong" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -264,51 +369,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysql_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testpachong2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pachong" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testpachong2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tubatu" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pachong" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders/tubatu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysql_3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,11 +380,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.mysql_3" />
+        <item itemvalue="Python.guazispider" />
+        <item itemvalue="Python.handle_guazi" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.tubatu" />
-        <item itemvalue="Python.testpachong2" />
-        <item itemvalue="Python.mysql_2" />
-        <item itemvalue="Python.handle_51job_one" />
       </list>
     </recent_temporary>
   </component>
@@ -348,11 +409,14 @@
       <workItem from="1592289410481" duration="11879000" />
       <workItem from="1592373719696" duration="13524000" />
       <workItem from="1592463795047" duration="6034000" />
+      <workItem from="1592558119972" duration="2687000" />
+      <workItem from="1592613796641" duration="811000" />
+      <workItem from="1592633873808" duration="13176000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80625000" />
+    <option name="totallyTimeSpent" value="97299000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -364,14 +428,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="44" y="15" width="1730" height="1079" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24200426" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28443113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31995663" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4074074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32341528" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,7 +444,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27590674" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27089947" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32858992" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -400,14 +464,18 @@
     <SUITE FILE_PATH="coverage/pachong$handel_51job_two.coverage" NAME="handel_51job_two Coverage Results" MODIFIED="1592206841625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pachong$testpachong1.coverage" NAME="testpachong1 Coverage Results" MODIFIED="1592017371215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pachong$selenium_one.coverage" NAME="selenium_one Coverage Results" MODIFIED="1592210638337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pachong$mysql_3.coverage" NAME="mysql_3 Coverage Results" MODIFIED="1592645364754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pachong$selenium_4.coverage" NAME="selenium_4 Coverage Results" MODIFIED="1592212733110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pachong$handle_51job_one.coverage" NAME="handle_51job_one Coverage Results" MODIFIED="1592295127331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pachong$main.coverage" NAME="main Coverage Results" MODIFIED="1592469731364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project" />
     <SUITE FILE_PATH="coverage/pachong$handle_lxml.coverage" NAME="handle_lxml Coverage Results" MODIFIED="1591942689539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pachong$selenium_two.coverage" NAME="selenium_two Coverage Results" MODIFIED="1592212067874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pachong$guazispider.coverage" NAME="guazispider Coverage Results" MODIFIED="1592640587753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/guazi/guazi/spiders" />
     <SUITE FILE_PATH="coverage/pachong$testpachong2.coverage" NAME="testpachong2 Coverage Results" MODIFIED="1592301548280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pachong$hander_re.coverage" NAME="hander_re Coverage Results" MODIFIED="1591859812654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pachong$handle_guazi.coverage" NAME="handle_guazi Coverage Results" MODIFIED="1592638740305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pachong$handle_china_unix.coverage" NAME="handle_china_unix Coverage Results" MODIFIED="1591602855287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pachong$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1592646958535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/guazi/guazi" />
     <SUITE FILE_PATH="coverage/pachong$tubatu.coverage" NAME="tubatu Coverage Results" MODIFIED="1592386994572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders" />
     <SUITE FILE_PATH="coverage/pachong$handle_requests.coverage" NAME="handle_requests Coverage Results" MODIFIED="1591409600124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pachong$handle_login_flask_zhaedu_com.coverage" NAME="handle_login_flask_zhaedu_com Coverage Results" MODIFIED="1591604174605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -457,13 +525,6 @@
           <folding>
             <element signature="e#35#50#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handle_zhengshu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -549,30 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hander_re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handel_51job_two.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding>
-            <element signature="e#23#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/selenium_6.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -631,39 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testpachong2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="73" column="65" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="105" column="18" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="18" />
-          <folding>
-            <element signature="e#233#259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -671,37 +675,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/items.py">
+    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="23" column="75" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
+        <state relative-caret-position="1387">
+          <caret line="73" column="65" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="1957">
+          <caret line="105" column="18" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="18" />
           <folding>
-            <element signature="e#253#267#0" expanded="true" />
+            <element signature="e#233#259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guazi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4541">
+          <caret line="239" column="1" selection-start-line="239" selection-start-column="1" selection-end-line="239" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testpachong2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handle_zhengshu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guazicity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hander_re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handel_51job_two.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="88" column="48" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="48" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/spiders/tubatu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="76" column="162" selection-start-line="76" selection-start-column="162" selection-end-line="76" selection-end-column="162" />
+        <state relative-caret-position="693">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="e#102#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/handle_guazi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guazi/guazi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="85" column="1" lean-forward="true" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql_guazi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guazi/guazi/guazi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <element signature="e#253#267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tubatu_scrapy_project/tubatu_scrapy_project/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="75" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guazi/guazi/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guazi/guazi/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="94" column="59" lean-forward="true" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
+          <folding>
+            <element signature="e#170#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guazi/guazi/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guazi/guazi/spiders/guazispider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="120" column="67" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guazi/guazi/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
         </state>
       </provider>
     </entry>
