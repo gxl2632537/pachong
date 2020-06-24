@@ -28,5 +28,7 @@ class GuaziItem(scrapy.Item):
     desplacement_info = scrapy.Field()
     # 变速箱，手动挡还是自动挡
     transmission_case = scrapy.Field()
+    # 主图展示
+    mian_picture_url = scrapy.Field()
 
 

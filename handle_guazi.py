@@ -83,7 +83,7 @@ if '正在打开中,请稍后' in response.text:
     # print(city_list)
     info_list = []
     for city in city_list:
-        if city[2] == '北京':
+        # if city[2] == '北京':
             for brand in brand_list:
                 info = {}
                 #https://www.guazi.com/anqing/buy

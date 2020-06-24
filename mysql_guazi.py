@@ -13,9 +13,9 @@ class Mysql_client(object):
             # print(items)
             # sql 语句动态化
             sql = "INSERT INTO guazi_data(car_id, \
-                    car_name, from_url,car_price,license_time,km_info,license_location,desplacement_info,transmission_case) \
-                    VALUES ('%s', '%s','%s','%s','%s', '%s','%s','%s','%s')" % \
-                  (i['car_id'], i['car_name'], i['from_url'], i['car_price'], i['license_time'], i['km_info'], i['license_location'], i['desplacement_info'], i['transmission_case'])
+                    car_name, from_url,car_price,license_time,km_info,license_location,desplacement_info,transmission_case,mian_picture_url) \
+                    VALUES ('%s', '%s','%s','%s','%s', '%s','%s','%s','%s','%s')" % \
+                  (i['car_id'], i['car_name'], i['from_url'], i['car_price'], i['license_time'], i['km_info'], i['license_location'], i['desplacement_info'], i['transmission_case'], i['mian_picture_url'])
             try:
                 # 执行sql
                 self.cursor.execute(sql)

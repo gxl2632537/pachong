@@ -11,7 +11,7 @@ class GuazispiderSpider(scrapy.Spider):
     # 重写框架请求
     def start_requests(self):
         # 用循环来取数据，直到数据为空
-        for i in range(14,200):
+        for i in range(6,84051):
             print(i)
             task = insert_data.get_task(i)
             print(task)
@@ -121,13 +121,14 @@ class GuazispiderSpider(scrapy.Spider):
             "/html/body/div[4]/div[3]/div[2]/ul/li[1]/span/img/@src").extract_first()
         car_info['km_info'] = response.xpath(
             "//ul[@class='assort clearfix']/li[@class='two']/span/text()").extract_first()
-        # 上牌地
+        # 排量标准
         car_info['license_location'] = \
-            response.xpath("//ul[@class='assort clearfix']/li[@class='three']/span/text()").extract_first()
+            response.xpath("/html/body/div[4]/div[5]/ul/li[3]/div/text()").extract_first()
         # 排量信息
         car_info['desplacement_info'] = \
             response.xpath("//ul[@class='assort clearfix']/li[@class='three']/span/text()").extract_first()
         # 变速箱，手动挡还是自动挡
         car_info['transmission_case'] = response.xpath(
             "//ul[@class='assort clearfix']/li[@class='last']/span/text()").extract_first()
+        car_info['mian_picture_url'] = response.xpath('//*[@id="pic"]/ul[1]/li[1]/img/@src').extract_first()
         yield car_info
