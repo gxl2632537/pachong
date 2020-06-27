@@ -66,7 +66,7 @@ IMAGES_STORE = 'images'
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'lucai.pipelines.LucaiPipeline': 300,
-   'lucai.pipelines.lucaiImagePipeline': 301,
+   'lucai.pipelines.lucaiImagePipeline': 200,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

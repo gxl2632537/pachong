@@ -35,15 +35,20 @@ class LucaispiderSpider(scrapy.Spider):
         # 找到内容区域
 
         discripts = respones.xpath("//div[@class='InfoSContent']/text()").extract_first()
-        content = respones.xpath("/div[@class='InfoContent']/text()").extract_first()
+        content = respones.xpath("//div[@class='InfoContent']/text()").extract()
         xq_img_url = respones.xpath("//div[@class='InfoContent']/p/img/@src").extract_first()
         # 使用在items.py中定义的字段，因此需要导入相应的LucaiItem包
         lucai_info = LucaiItem()
         lucai_info['title']=respones.request.meta['title']
         lucai_info['time']=respones.request.meta['time']
         lucai_info['discripts']=discripts
-        lucai_info['contents']=content
-        lucai_info['contents_img_url']=xq_img_url
-        lucai_info['image_urls']="http://m.wyz888.com" + xq_img_url
+        content_str = ''
+        for item in content:
+            content_str = content_str + item
+
+        lucai_info['contents'] = content_str
+        # lucai_info['contents_img_url']=xq_img_url
+        # 这里请求图片的必须是一个列表，因为到后面要进行遍历
+        lucai_info['image_urls']=[str("http://m.wyz888.com") + str(xq_img_url)]
 
         yield lucai_info

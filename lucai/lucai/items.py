@@ -16,5 +16,4 @@ class LucaiItem(scrapy.Item):
     discripts =scrapy.Field()
     contents = scrapy.Field()
     contents_img_url = scrapy.Field()
-
     image_urls = scrapy.Field()

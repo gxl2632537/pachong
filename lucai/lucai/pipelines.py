@@ -4,13 +4,15 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+import os
+from os.path import dirname
+
 import pymysql
 import scrapy
 from scrapy.exceptions import DropItem
 from scrapy.pipelines.images import ImagesPipeline
 
 class LucaiPipeline:
-    def process_item(self, item, spider):
         # 初始化
         def __init__(self):
             # 连接数据库
@@ -48,10 +50,10 @@ class lucaiImagePipeline(ImagesPipeline):
     # 请求下载
     def get_media_requests(self, item, info):
         # 根据image_urls中指定的url进行爬取
-        print(item['image_urls'])
-        # for img_url in item['image_urls']:
-        #     # 下载完后给别的函数去改名字，所以用meta传下去
-        #     yield scrapy.Request(img_url, meta={'item': item})
+        # print(item['image_urls'])
+        for img_url in item['image_urls']:
+            # 下载完后给别的函数去改名字，所以用meta传下去
+            yield scrapy.Request(img_url, meta={'item': item})
 
     # 该方法默认即可，一般不做修改（用于下载图片）
     def item_completed(self, results, item, info):
@@ -62,6 +64,7 @@ class lucaiImagePipeline(ImagesPipeline):
         image_paths = [x['path'] for ok,x in results if ok] # 通过列表生成式
         if not image_paths:
             raise DropItem('Item contains no images') # 抛出异常，图片下载失败（注意要导入DropItem模块）
+
         return item
 
     # 用于给下载的图片设置文件名称和路径
@@ -77,5 +80,9 @@ class lucaiImagePipeline(ImagesPipeline):
         image_guid = request.url.split('/')[-1]  # request.url 获取到如下的图片地址
         # 如："https://pic.to8to.com/case/2018/08/27/20180827165930-fac62168_284.jpg"
         # 拆分后为：20180827165930-fac62168_284.jpg
-        filename = u'images/{}/{}'.format(folder_strip, image_guid)
+        filename = u'/{}/{}'.format(folder_strip, image_guid)
+
+        # 图片的保存路径  这里要在settings中设置优先级，下载图片优先，下载完后，在把地址传到item里面去，进行下面的数据库存储
+        filename2 = u'\{}\{}'.format(folder_strip, image_guid)
+        item['contents_img_url'] = os.path.abspath(dirname(__file__)) + str('\images') + filename2
         return filename

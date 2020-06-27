@@ -6,10 +6,13 @@
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # 定义Item Pipeline的实现，实现数据的清洗，储存，验证。
 # 这里我导入是myql 我不用mogodb
+from os.path import dirname
+
 import pymysql
 import scrapy
 from scrapy.exceptions import DropItem
 from scrapy.pipelines.images import ImagesPipeline
+import os
 # 实现将数据保存到mysql中去
 class TubatuScrapyProjectPipeline:
     # 初始化
@@ -55,6 +58,8 @@ class TubatuImagePipeline(ImagesPipeline):
         # 图片下载完成之后，处理结果的方法，返回的是一个二元组
         # 返回的格式：(success, image_info_or_failure)  第一个元素表示图片是否下载成功；第二个元素是一个字典，包含了image的信息
         image_paths = [x['path'] for ok,x in results if ok] # 通过列表生成式
+
+
         if not image_paths:
             raise DropItem('Item contains no images') # 抛出异常，图片下载失败（注意要导入DropItem模块）
         return item
